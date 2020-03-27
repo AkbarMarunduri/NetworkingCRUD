@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Mahasiswa"
+            android:textAlignment="center"
+            android:textAppearance="?actionMenuTextAppearance"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_noinduk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:hint="Nomor Induk"
+                app:met_floatingLabel="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_nama"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:hint="Nama"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_alamat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:hint="Alamat"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_hobi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:hint="Hobi"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/bt_submit"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_crop_rotate_black_24dp"
+            android:text="Submit"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
